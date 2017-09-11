@@ -7,6 +7,8 @@ public abstract class Taco {
 	boolean isTuesday=false;
 	String typeOfTaco;
 	List <String>toppingsOnThisTaco;
+	PlatterSize mPlatterSize;
+
 	
 	public Taco() {
 		Calendar calendar = Calendar.getInstance();

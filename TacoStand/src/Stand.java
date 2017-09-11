@@ -4,13 +4,17 @@ import java.util.Map;
 
 public class Stand {
 
-	Map <String, Double> availableToppings;
+	static Map <String, Double> availableToppings;
 	static boolean done =false;
 	static InputHelper inputHelper;
 	static List<Taco> tacosInThisOrder;
 	
 	public Stand() {
-		availableToppings.add();
+		availableToppings.put("salsa", 0.0);
+		availableToppings.put("lettuce", 0.0);
+		availableToppings.put("beans", 0.0);
+		availableToppings.put("corn", 0.0);
+		availableToppings.put("guac", 1.0);
 	}
 	
 	// this will be where we test our functions
@@ -75,8 +79,16 @@ public class Stand {
 			temp += "no tacos";
 		}
 		for(Taco t : tacosInThisOrder) {
-			temp += " a " + t.typeOfTaco + " with " + t.getToppingsString() + " which costs " ;
+			temp += " a " + t.typeOfTaco + " with " + t.getToppingsString() + " which costs " + CalculatePrice(t); ;
 		}
 		return "";
+	}
+	private static double CalculatePrice(Taco t) {
+		double price = t.mPlatterSize.price;
+		for (int i =0 ; i < t.getToppingsString().length(); i++) {
+			price += availableToppings.get(t.getToppingsString().indexOf(i));
+			
+		}
+		return price; 
 	}
 }
