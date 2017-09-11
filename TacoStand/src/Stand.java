@@ -71,7 +71,7 @@ public class Stand {
 			temp += "no tacos";
 		}
 		for(Taco t : tacosInThisOrder) {
-			temp += " a " + t.typeOfTaco + " with " + t.get
+			temp += " a " + t.typeOfTaco + " with " ;
 		}
 		return "";
 	}
