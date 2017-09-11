@@ -1,6 +1,7 @@
 import java.util.Calendar;
 
 //this is the model of all foods
+//food class is complete
 public abstract class Food {
 	boolean isTuesday=false;
 	
