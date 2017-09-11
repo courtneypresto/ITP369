@@ -2,7 +2,7 @@ import java.util.List;
 
 public class ChickenTaco extends Taco{
 	PlatterSize mPlatterSize;
-	List <String>toppingsOnThisTaco;
+	
 
 	public ChickenTaco (PlatterSize ps) {
 		super();

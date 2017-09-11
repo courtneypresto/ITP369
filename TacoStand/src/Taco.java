@@ -1,10 +1,12 @@
 import java.util.Calendar;
+import java.util.List;
 
 //this is the model of all foods
 //food class is complete
 public abstract class Taco {
 	boolean isTuesday=false;
 	String typeOfTaco;
+	List <String>toppingsOnThisTaco;
 	
 	public Taco() {
 		Calendar calendar = Calendar.getInstance();

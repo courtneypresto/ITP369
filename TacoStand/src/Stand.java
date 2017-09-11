@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -62,12 +63,15 @@ public class Stand {
 
 	
 	public static String PrettyPrint() {
+		
+		// uncomment this line when comparable is implemented
+		//Collections.sort(tacosInThisOrder);
 		String temp = "This order contains: ";
 		if(tacosInThisOrder.isEmpty()) {
 			temp += "no tacos";
 		}
 		for(Taco t : tacosInThisOrder) {
-			temp += " a "
+			temp += " a " + t.typeOfTaco + " with " + t.get
 		}
 		return "";
 	}
