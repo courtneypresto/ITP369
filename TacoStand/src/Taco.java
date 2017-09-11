@@ -21,6 +21,10 @@ public abstract class Taco {
 		}
 	}
 	
+	public void AddTopping(String topping) {
+		 toppingsOnThisTaco.add(topping);
+		}
+	
 	//returns a pretty toppings string
 		public String getToppingsString() {
 			if(toppingsOnThisTaco.isEmpty()) {

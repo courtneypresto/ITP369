@@ -10,9 +10,7 @@ public class ChickenTaco extends Taco{
 		this.typeOfTaco = "chicken";
 	}
 	
-	public void AddTopping(String topping) {
-	 toppingsOnThisTaco.add(topping);
-	}
+	
 	
 	
 }
