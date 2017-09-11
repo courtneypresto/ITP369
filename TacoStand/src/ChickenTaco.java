@@ -7,6 +7,7 @@ public class ChickenTaco extends Taco{
 	public ChickenTaco (PlatterSize ps) {
 		super();
 		mPlatterSize = ps;
+		this.typeOfTaco = "chicken";
 	}
 	
 	public void AddTopping(String topping) {

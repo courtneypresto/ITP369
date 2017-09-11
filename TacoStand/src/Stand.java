@@ -6,7 +6,7 @@ public class Stand {
 	Map <String, Double> availableToppings;
 	static boolean done =false;
 	static InputHelper inputHelper;
-	List<Taco> tacosInThisOrder;
+	static List<Taco> tacosInThisOrder;
 	
 	// this will be where we test our functions
 	public static void main(String[] args) {
@@ -60,4 +60,15 @@ public class Stand {
 		System.out.println("4: Cancel/Quit");
 	}
 
+	
+	public static String PrettyPrint() {
+		String temp = "This order contains: ";
+		if(tacosInThisOrder.isEmpty()) {
+			temp += "no tacos";
+		}
+		for(Taco t : tacosInThisOrder) {
+			temp += " a "
+		}
+		return "";
+	}
 }

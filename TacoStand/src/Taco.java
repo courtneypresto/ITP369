@@ -4,6 +4,7 @@ import java.util.Calendar;
 //food class is complete
 public abstract class Taco {
 	boolean isTuesday=false;
+	String typeOfTaco;
 	
 	public Taco() {
 		Calendar calendar = Calendar.getInstance();
