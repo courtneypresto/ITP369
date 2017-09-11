@@ -1,10 +1,10 @@
 import java.util.List;
 
-public class TacoPlatter extends Food{
+public class ChickenTaco extends Taco{
 	PlatterSize mPlatterSize;
 	List <String>toppingsOnThisTaco;
 
-	public TacoPlatter (PlatterSize ps) {
+	public ChickenTaco (PlatterSize ps) {
 		super();
 		mPlatterSize = ps;
 	}

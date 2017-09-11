@@ -6,7 +6,7 @@ public class Stand {
 	Map <String, Double> availableToppings;
 	static boolean done =false;
 	static InputHelper inputHelper;
-	List<TacoPlatter> tacoPlattersInThisOrder;
+	List<Taco> tacosInThisOrder;
 	
 	// this will be where we test our functions
 	public static void main(String[] args) {
@@ -34,6 +34,7 @@ public class Stand {
 	
 	private static void CancelOrder() {
 		// TODO cancel order message 
+		System.out.println("Order of: ");
 		
 	}
 

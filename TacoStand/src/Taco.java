@@ -2,10 +2,10 @@ import java.util.Calendar;
 
 //this is the model of all foods
 //food class is complete
-public abstract class Food {
+public abstract class Taco {
 	boolean isTuesday=false;
 	
-	public Food() {
+	public Taco() {
 		Calendar calendar = Calendar.getInstance();
 		int day = calendar.get(Calendar.DAY_OF_WEEK); 
 
