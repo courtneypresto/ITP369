@@ -9,6 +9,10 @@ public class Stand {
 	static InputHelper inputHelper;
 	static List<Taco> tacosInThisOrder;
 	
+	public Stand() {
+		availableToppings.add();
+	}
+	
 	// this will be where we test our functions
 	public static void main(String[] args) {
 		
@@ -71,7 +75,7 @@ public class Stand {
 			temp += "no tacos";
 		}
 		for(Taco t : tacosInThisOrder) {
-			temp += " a " + t.typeOfTaco + " with " ;
+			temp += " a " + t.typeOfTaco + " with " + t.getToppingsString() + " which costs " ;
 		}
 		return "";
 	}
