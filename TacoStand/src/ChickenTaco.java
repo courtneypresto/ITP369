@@ -6,7 +6,7 @@ public class ChickenTaco extends Taco{
 	public ChickenTaco (PlatterSize ps) {
 		super();
 		mPlatterSize = ps;
-		this.typeOfTaco = "chicken";
+		this.typeOfTaco = "chicken taco";
 	}
 	
 	

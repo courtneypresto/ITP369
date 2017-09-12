@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public abstract class Taco {
 
 	
 	public Taco() {
+		toppingsOnThisTaco = new ArrayList<String>();
 		Calendar calendar = Calendar.getInstance();
 		int day = calendar.get(Calendar.DAY_OF_WEEK); 
 
@@ -35,7 +37,7 @@ public abstract class Taco {
 			String temp = "";
 			for(int i =0; i < toppingsOnThisTaco.size();i++) {
 				if(i == toppingsOnThisTaco.size()-1 && toppingsOnThisTaco.size() >1) { // indicates last topping
-					temp += "and";
+					temp += "and ";
 				}
 				temp += toppingsOnThisTaco.get(i);
 				if(i != toppingsOnThisTaco.size()-1) {
